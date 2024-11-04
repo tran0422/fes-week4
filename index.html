@@ -13,24 +13,37 @@ https://api.chucknorris.io/jokes/random
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tai's Week 4</title>
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="jokes.js"></script>
 </head>
 
 <body>
-    <!-- Not sure if this Nav is really needed, but part of the assignment -->
-    <nav>
+    <!-- Not sure if this Nav is really needed, but part of the assignment
+     Things in the nav: contact, that should really be it. Home and search just doesn't make sense when they're in front of you. 
+     The search box will also be here.-->
+    <nav class="nav__style">
+        <div class="nav-df__space-between">
+            <figure class="nav-img__crop">
+                <img class="nav-logo__size"
+                    src="https://wallpapers.com/images/hd/rick-and-morty-silhouette-e95nobbtyijewsah.webp" alt="">
+            </figure>
+            <a class="nav-contact__link" href="#">Contact</a>
+        </div>
 
+        <p class="nav-search__text">Rickle it!</p>
+        <div class="nav-search-box">
+            <input class="nav-search__input" type="text"
+                placeholder="Search for Rick and Morty character names."></input>
+            <button class="nav-search__button">Search</button>
+        </div>
     </nav>
 
-    <!-- Search box, basically a filter -->
-    <header>
-
-    </header>
-
     <!-- Marquee of dad jokes and chuck norris alternating -->
-    <section></section>
+    <section class="jokes-marquee"></section>
 
     <!-- Results and sort function -->
-    <section></section>
+    <section class="search-results"></section>
 
 </body>
 
