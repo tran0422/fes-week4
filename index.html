@@ -33,7 +33,7 @@ https://api.chucknorris.io/jokes/random
                 <img class="nav-logo__size"
                     src="https://wallpapers.com/images/hd/rick-and-morty-silhouette-e95nobbtyijewsah.webp" alt="">
             </figure>
-            <a class="nav-contact__link" href="#" onclick="toggleModal()">Contact</a>
+            <span class="nav-contact__link" onclick="toggleModal()">Contact</span>
         </div>
 
         <p class="nav-search__title">Rickle it!</p>
@@ -49,6 +49,7 @@ https://api.chucknorris.io/jokes/random
 
         <div class="modal">
             <div class="modal__div__background">
+                <div class="form__x" onclick="toggleModal()"><i class="fa-solid fa-xmark"></i></div>
                 <p class="modal-title__p">What to submit to overlord Snowball?</p>
 
                 <form id="contact-form" onsubmit="contact(event)">
@@ -74,8 +75,9 @@ https://api.chucknorris.io/jokes/random
 
                     <p class="form__success">Thanks for the message. But, uh, don't expect me to reply or anything. I've
                         got multiversal issues to deal with.</p>
+                </form>
+                
             </div>
-            </form>
         </div>
     </nav>
 
