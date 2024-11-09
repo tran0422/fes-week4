@@ -1,0 +1,145 @@
+/* 1024 px */
+@media (max-width: 1024px) {
+
+    /* Nav */
+    .nav__style {
+        max-width: 1024px;
+    }
+
+    .nav-df__space-between {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Nav */
+    .nav__style {
+        max-width: 768px;
+    }
+
+    .nav-df__space-between {
+        max-width: 700px;
+    }
+}
+
+/* 428px */
+@media (max-width: 428px) {
+
+    /* Nav */
+    .nav__style {
+        max-width: 428px;
+    }
+
+    .nav-df__space-between {
+        max-width: 380px;
+    }
+
+    .nav-search-box {
+        max-width: 400px;
+    }
+
+    /* Modal */
+    .modal {
+        top: 14%;
+        height: 630px;
+    }
+
+    .modal-title__p {
+        font-size: 22px;
+        font-weight: 500;
+        margin: 12px auto;
+        padding: 0;
+    }
+
+    #form__submit {
+        font-size: 30px;
+        transform: translateX(30%);
+    }
+
+    #form__submit:active {
+        transform: scale(.8) translateX(35%);
+    }
+
+    .search-results {
+        max-width: 380px;
+        margin: 22px 8px;
+    }
+
+    .result-noname__df {
+        margin-left: 2px;
+    }
+
+    .result-noname-img__crop {
+        width: 100px;
+    }
+
+    .result-noname-img {
+        width: 160px;
+    }
+
+    .result-noname__display {
+        margin: 14px 12px;
+        font-size: 16px;
+        font-weight: 300;
+        max-width: 200px;
+    }
+}
+
+/* 320px and 376px*/
+@media (max-width: 376px) {
+
+    /* Nav */
+    .nav__style {
+        max-width: 376px;
+    }
+
+    .nav-df__space-between {
+        max-width: 300px;
+    }
+
+    .nav-search-box {
+        max-width: 280px;
+    }
+
+    .nav-search__input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    /* Modal */
+    .modal {
+        max-width: 310px;
+        width: 100%;
+    }
+
+    .modal-title__p {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 12px auto;
+        padding: 0;
+    }
+
+    #form__submit {
+        font-size: 30px;
+        transform: translateX(16%);
+    }
+
+    #form__submit:active {
+        transform: scale(.8) translateX(14%);
+    }
+
+    .form__label {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .form__x .fa-xmark {
+        position: absolute;
+        color: white;
+        right: 0;
+        font-size: 40px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
