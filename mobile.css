@@ -135,11 +135,6 @@
     }
 
     .form__x .fa-xmark {
-        position: absolute;
-        color: white;
-        right: 0;
         font-size: 20px;
-        padding: 10px;
-        cursor: pointer;
     }
 }
