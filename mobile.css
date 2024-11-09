@@ -116,7 +116,7 @@
     .modal-title__p {
         font-size: 20px;
         font-weight: 400;
-        margin: 12px auto;
+        margin: 42px auto 12px;
         padding: 0;
     }
 
@@ -138,7 +138,7 @@
         position: absolute;
         color: white;
         right: 0;
-        font-size: 40px;
+        font-size: 20px;
         padding: 10px;
         cursor: pointer;
     }
