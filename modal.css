@@ -1,0 +1,165 @@
+/* Modal */
+.modal {
+    position: relative;
+    background-image: url('https://wallpapers.com/images/high/rick-and-morty-cool-episode-with-snuffles-wb01olhuvlt0hlx9.webp');
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 430px;
+    height: 720px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 600ms ease, box-shadow 0.5s ease;
+}
+
+.modal__div__background {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 600ms ease;
+}
+
+.modal__visible .modal {
+    z-index: 10;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    opacity: 1;
+}
+
+.modal__visible .modal__div__background {
+    opacity: 1;
+}
+
+.modal-title__p {
+    width: 90%;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 22px auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+#contact-form {
+    height: 550px;
+}
+
+.form__label {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 22px;
+}
+
+.form__input {
+    margin: 8px 0 22px 22px;
+    width: 90%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    outline: none;
+    border: none;
+    padding-left: 14px;
+    border-radius: 14px;
+}
+
+.form__input::placeholder {
+    color: white;
+}
+
+input {
+    height: 44px;
+}
+
+textarea {
+    height: 200px;
+    padding-top: 8px;
+}
+
+#form__submit {
+    color: blue;
+    background-color: #a6eee6ff;
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    border-radius: 8px;
+    padding: 8px 0;
+    left: 0;
+    transform: translateX(40%);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+#form__submit:hover {
+    filter: brightness(60%);
+    color: #e762d7ff;
+}
+
+#form__submit:active {
+    transform: scale(.8) translateX(45%);
+}
+
+.form__loading,
+.form__success {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.form__loading {
+    background-color: white;
+    font-size: 0px;
+}
+
+.form__success {
+    background-color: #4bb543;
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 28px;
+}
+
+.form__visible {
+    z-index: 1;
+    display: flex;
+}
+
+.fa-spinner {
+    font-size: 100px;
+    animation: spinner 600ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form__x .fa-xmark {
+    position: absolute;
+    color: white;
+    right: 0;
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form__x:active i {
+    transform: scale(.5);
+}
