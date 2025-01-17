@@ -43,7 +43,7 @@ async function jokesDisplay() {
         await techJokes();
     }
     
-    jokeIndex += 1 % 4;
+    jokeIndex = (jokeIndex + 1) % 4;
 }
 
 jokesDisplay();
